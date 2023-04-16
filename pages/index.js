@@ -97,7 +97,9 @@ export default function Home() {
                 love to help my peers.
               </p>
             </div>
+            <h1 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">My Socials</h1>
             <div className="p-3 text-6xl flex justify-center gap-16 py-3 text-gray-600  ">
+              
               <a
                 href="https://www.linkedin.com/in/rohit-kumar-760b0b1b6/"
                 target="_blank"
