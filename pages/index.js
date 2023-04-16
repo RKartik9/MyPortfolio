@@ -140,7 +140,7 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:flex gap-10 flex-1 ">
-              <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-400 ">
+              <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-400 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
                 <Image
                   className="inline-flex"
                   src={web}
@@ -164,7 +164,7 @@ export default function Home() {
                 
                 </div>
               </div>
-              <div className=" flex-grow text-center shadow-xl p-12 rounded-xl my-10 dark:shadow-slate-400 ">
+              <div className=" flex-grow text-center shadow-xl p-12 rounded-xl my-10 dark:shadow-slate-400 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
                 <Image
                   className="inline-flex"
                   src={design}
@@ -189,7 +189,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex-grow  text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-400  ">
+              <div className="flex-grow  text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-400 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer  ">
                 <Image
                   className="inline-flex"
                   src={dsa}
@@ -203,7 +203,7 @@ export default function Home() {
                   I have a good command in Data Structures and Algorithms,
                   solving problems daily to improve my problem solving abilty.
                 </p>
-                <h4 className="py-4 text-teal-600 dark:text-cyan-400">
+                <h4 className="py-4 text-teal-600 dark:text-cyan-400 ">
                   Languages I know
                 </h4>
                 <div className=" flex justify-center gap-9 py-5">
@@ -218,59 +218,59 @@ export default function Home() {
           {/* Third Section */}
 
           <section className="p-10">
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400 ">
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
               <h3 className="text-lg font-medium pt-8 pb-8 dark:text-white ">
                 Technologies, I have worked upon
               </h3>
               {/* row-1 */}
               <div className="flex justify-around gap-5 w-auto">
                 {/* html */}
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={html} width={100} height={100} />
                 </div>
                 {/* css */}
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer" >
                   <Image src={css} width={80} height={90} />
                 </div>
                 {/* JS */}
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={js} width={90} height={90} />
                 </div>
               </div>
               {/* row-2 */}
               <div className="flex justify-around px-1.5 py-10 gap-5">
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={node} width={110} height={90} />
                 </div>
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={express} width={90} height={90} />
                 </div>
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={mongo} width={100} height={90} />
                 </div>
               </div>
 
               {/* row-3 */}
               <div className="flex justify-around px-1.5 gap-5 ">
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={reac} width={100} height={90} />
                 </div>
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={tailwind} width={100} height={90} />
                 </div>
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={next} width={110} height={90} />
                 </div>
               </div>
               {/* 4-th row */}
               <div className="flex justify-around px-1.5 py-8 gap-5">
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={adobepremiere} width={100} height={90} />
                 </div>
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={figma} width={80} height={90} />
                 </div>
-                <div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={blender} width={116} height={90} />
                 </div>
               </div>
