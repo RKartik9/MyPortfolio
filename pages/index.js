@@ -109,7 +109,7 @@ export default function Home() {
               <a href="https://github.com/RKartik9" target="_blank">
                 {darkMode ? <FiGithub /> : <AiFillGithub />}
               </a>
-              <a href="https://www.behance.net/rohitkartik" target="_blank">
+              <a href="https://www.behance.net/rkartik9" target="_blank">
                 {darkMode ? <SlSocialBehance /> : <AiFillBehanceCircle />}
               </a>
             </div>
