@@ -246,7 +246,7 @@ export default function Home() {
                   <Image src={express} width={90} height={90} />
                 </div>
                 <div className="hover:scale-110 duration-500 cursor-pointer">
-                  <Image src={mongo} width={100} height={90} />
+                  <Image src={mongo} width={100} height={90} className=" rounded-md" />
                 </div>
               </div>
 
