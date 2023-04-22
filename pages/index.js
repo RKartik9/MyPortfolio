@@ -76,7 +76,7 @@ export default function Home() {
 
                 <li>
                   <a className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
-                 px-4 py-2 rounded-md ml-8" href="https://drive.google.com/file/d/184okkmzjBF1RLUx4HVtddtSNIT0LMQQ7/view?usp=sharing" target="_blank">
+                 px-4 py-2 rounded-md ml-8" href="https://drive.google.com/file/d/1PaMonScGmNVcDThzpLtM1ESaRhvEfshM/view?usp=sharing" target="_blank">
                     Resume
                   </a>
                 </li>
