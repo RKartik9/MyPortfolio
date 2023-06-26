@@ -85,6 +85,16 @@ export default function Home() {
                     Resume
                   </a>
                 </li>
+                <li>
+                  <a
+                    className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
+                 px-4 py-2 rounded-md ml-8"
+                    href="https://cyeb6azqdh9.typeform.com/to/pXJfDEE5"
+                    target="_blank"
+                  >
+                    Contact Me
+                  </a>
+                </li>
               </ul>
             </nav>
             <div className="text-center p-9">
@@ -126,9 +136,11 @@ export default function Home() {
 
           {/* Second Section */}
           <section className="px-6">
-            <div>
-              <h3 className="text-3xl py-1 dark:text-white">Skills</h3>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <div className=" text-center p-9">
+              <h3 className="text-3xl align-middle py-2 dark:text-white">
+                Skills
+              </h3>
+              <p className="text-md py-2 leading-10 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
                 I am Rohit Kumar, a driven and talented Computer Science
                 Engineering student, with a passion for technology and design, I
                 have honed my skills in{" "}
@@ -146,7 +158,7 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:flex gap-10 flex-1 ">
-              <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-400 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
+              <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
                 <Image
                   className="inline-flex"
                   src={web}
@@ -169,7 +181,7 @@ export default function Home() {
                   <Image src={tailwind} width={50}></Image>
                 </div>
               </div>
-              <div className=" flex-grow text-center shadow-xl p-12 rounded-xl my-10 dark:shadow-slate-400 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
+              <div className=" flex-grow text-center shadow-xl p-12 rounded-xl my-10 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
                 <Image
                   className="inline-flex"
                   src={design}
@@ -193,7 +205,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex-grow  text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-400 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer  ">
+              <div className="flex-grow  text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer  ">
                 <Image
                   className="inline-flex"
                   src={dsa}
