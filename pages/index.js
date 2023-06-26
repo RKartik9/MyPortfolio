@@ -300,7 +300,7 @@ export default function Home() {
             <div className="lg:flex gap-10 justify-center  lg: flex justify-center ">
               <div>
                 <p className=" dark:text-cyan-400 text-2xl font-medium text-center ">
-                  Contact me at
+                  Mail me at
                 </p>
                 <a
                   className="block w-44 p-4"
