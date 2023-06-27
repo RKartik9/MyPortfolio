@@ -59,13 +59,13 @@ export default function Home() {
               <h1 className="text-xl  font-burtons dark:text-white">
                 Rohit Kumar
               </h1>
-              <ul className="flex items-center">
-                <li>
+              <ul className="flex items-center ">
+                <li text-xl>
                   {darkMode ? (
                     <BsSun
                       onClick={() => setDarkMode(!darkMode)}
                       style={color}
-                      className="cursor-pointer text-2xl"
+                      className="cursor-pointer "
                     />
                   ) : (
                     <BsFillMoonStarsFill
@@ -78,17 +78,18 @@ export default function Home() {
                 <li>
                   <a
                     className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
-                 px-4 py-2 rounded-md ml-8"
+                    px-1
+                  lg:px-2 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem "
                     href="https://drive.google.com/file/d/19XixYutWocD-xDn1n8ZX2KIX_1QMcpin/view?usp=sharing"
                     target="_blank"
                   >
                     Resume
                   </a>
                 </li>
-                <li>
+                <li className="text-0.5rem">
                   <a
                     className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
-                 px-4 py-2 rounded-md ml-8"
+                 px-1 lg:px-4 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem"
                     href="https://cyeb6azqdh9.typeform.com/to/pXJfDEE5"
                     target="_blank"
                   >
