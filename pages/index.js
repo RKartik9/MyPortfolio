@@ -106,11 +106,13 @@ export default function Home() {
                 Web Developer Co-lead at Google Developer Student Clubs, NIET
               </h3>
               <p className="text-md py-6 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-                I am an undergraduate student who is very much enthusiastic to
-                learn new thing. I am a very adaptive person and I love
-                challenges. I always focus on the process but I do focus on the
-                result too. I always strive forward to learn new things and also
-                love to help my peers.
+                As an undergraduate student, I possess an immense enthusiasm for
+                learning and exploring new things. Adaptability is one of my
+                core strengths, and I embrace challenges with great excitement.
+                While I value the end results, my primary focus lies in the
+                process itself. I am constantly driven to acquire new knowledge
+                and skills, and I derive immense satisfaction from assisting and
+                supporting my peers.
               </p>
             </div>
             <h1 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
