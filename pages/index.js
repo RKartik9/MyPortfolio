@@ -80,7 +80,7 @@ export default function Home() {
                     className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
                     px-1
                   lg:px-2 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem "
-                    href="https://drive.google.com/file/d/12E22KjjsoAmjW0INXT7t0N2xouH83zwu/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1X6iJwfE5AALCo2PKv_R8ySvC3wjMo_Y-/view?usp=sharing"
                     target="_blank"
                   >
                     Resume
