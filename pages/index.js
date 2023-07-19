@@ -237,7 +237,7 @@ export default function Home() {
 
           <section className="p-10">
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
-              <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
+              <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
                 Technologies, I have worked upon
               </h3>
               {/* row-1 */}
@@ -302,7 +302,7 @@ export default function Home() {
           <section>
             <div className="lg:flex gap-10 justify-center  lg: flex justify-center ">
               <div>
-                <p className=" dark:text-cyan-400 text-2xl font-medium text-center ">
+                <p className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
                   Mail me at
                 </p>
                 <a
