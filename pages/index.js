@@ -140,7 +140,7 @@ export default function Home() {
           {/* Second Section */}
           <section className="px-6">
             <div className=" text-center p-9">
-              <h3 className="text-3xl align-middle py-2 dark:text-white">
+              <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
                 Skills
               </h3>
               <p className="text-md py-2 leading-10 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
@@ -237,7 +237,7 @@ export default function Home() {
 
           <section className="p-10">
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
-              <h3 className="text-lg font-medium pt-8 pb-8 dark:text-white ">
+              <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
                 Technologies, I have worked upon
               </h3>
               {/* row-1 */}
