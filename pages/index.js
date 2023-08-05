@@ -32,6 +32,8 @@ import xd from "../public/xd.png";
 import java from "../public/java.png";
 import python from "../public/python.png";
 import javascript from "../public/javascript.png";
+import vite from "../public/vite.png";
+import git from "../public/git.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -295,6 +297,17 @@ export default function Home() {
                 </div>
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={blender} width={116} height={90} />
+                </div>
+              </div>
+              <div className="flex justify-around px-1.5 py-8 gap-5">
+                <div className="hover:scale-110 duration-500 cursor-pointer">
+                  <Image src={vite} width={100} height={90} />
+                </div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
+                  <Image src={git} width={90} height={110} />
+                </div>
+                <div className="hover:scale-110 duration-500 cursor-pointer">
+                  <Image src={xd} width={116} height={110} />
                 </div>
               </div>
             </div>
