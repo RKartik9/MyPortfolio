@@ -40,6 +40,11 @@ export default function Home() {
   const color = {
     color: "#fff",
   };
+  const [nav, setNav] = useState(false);
+
+  const showNav = () => {
+    setNav(!nav);
+  };
 
   return (
     <>
@@ -62,12 +67,15 @@ export default function Home() {
                 Rohit Kumar
               </h1>
               <ul className="flex items-center ">
-                <li text-xl>
+                <li
+                  text-xl
+                  className="hover:scale-125 transform transition-transform duration-9000"
+                >
                   {darkMode ? (
                     <BsSun
                       onClick={() => setDarkMode(!darkMode)}
                       style={color}
-                      className="cursor-pointer "
+                      className="cursor-pointer text-xl "
                     />
                   ) : (
                     <BsFillMoonStarsFill
@@ -124,13 +132,22 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/rohit-kumar-760b0b1b6/"
                 target="_blank"
+                className=" bg-teal-200  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1  "
               >
                 {darkMode ? <FiLinkedin /> : <AiFillLinkedin />}
               </a>
-              <a href="https://github.com/RKartik9" target="_blank">
+              <a
+                href="https://github.com/RKartik9"
+                target="_blank"
+                className=" bg-teal-200  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1  "
+              >
                 {darkMode ? <FiGithub /> : <AiFillGithub />}
               </a>
-              <a href="https://www.behance.net/rkartik9" target="_blank">
+              <a
+                href="https://www.behance.net/rkartik9"
+                target="_blank"
+                className="bg-teal-200  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1 "
+              >
                 {darkMode ? <SlSocialBehance /> : <AiFillBehanceCircle />}
               </a>
             </div>
