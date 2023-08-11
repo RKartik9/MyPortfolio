@@ -46,6 +46,19 @@ export default function Home() {
     setNav(!nav);
   };
 
+  const date = new Date();
+  const hours = date.getHours();
+  let Greet;
+
+  if (hours < 12) {
+    Greet = "Morning! Have a jovial and an errorless day ahead.";
+  } else if (hours < 16) {
+    Greet = "Hey, Good Afternoon. How's the tech world treating you today?";
+  } else {
+    Greet =
+      "Warm evening wishes to you!  I hope you had a successful day of troubleshooting.";
+  }
+
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
@@ -108,7 +121,13 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className="text-center p-9">
+            <div className="text-center ">
+              <h3 className="greet text-xl py-1 text-teal-600 font-medium md:text-2xl dark:text-cyan-400">
+                {Greet}
+              </h3>
+            </div>
+
+            <div className="text-center p-7">
               <h2 className="text-3xl py-2 text-teal-600 font-medium md:text-6xl dark:text-cyan-400">
                 Developer || Designer
               </h2>
