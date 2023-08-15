@@ -121,11 +121,11 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className="text-center ">
+            {/* <div className="text-center ">
               <h3 className="greet text-xl py-1 text-teal-600 font-medium md:text-2xl dark:text-cyan-400">
                 {Greet}
               </h3>
-            </div>
+            </div> */}
 
             <div className="text-center p-7">
               <h2 className="text-3xl py-2 text-teal-600 font-medium md:text-6xl dark:text-cyan-400">
