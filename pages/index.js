@@ -56,7 +56,7 @@ export default function Home() {
     Greet = "Hey, Good Afternoon. How's the tech world treating you today?";
   } else {
     Greet =
-      "Warm evening wishes to you!  I hope you had a successful day of troubleshooting.";
+      "Warm Evening wishes to you!  I hope you had a successful day of troubleshooting.";
   }
 
   return (
@@ -103,7 +103,7 @@ export default function Home() {
                     className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
                     px-1
                   lg:px-2 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem "
-                    href="https://drive.google.com/file/d/14NXVu6P1uzRyS0-pJYPBJ3HDgYyf9C3C/view?usp=sharing"
+                    href="https://drive.google.com/file/d/17LiV4Cs_j2M6rpH9oUOcWz8S8wMITN9k/view?usp=drive_link"
                     target="_blank"
                   >
                     Resume
