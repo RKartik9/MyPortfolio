@@ -103,7 +103,7 @@ export default function Home() {
                     className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
                     px-1
                   lg:px-2 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem "
-                    href="https://drive.google.com/file/d/17LiV4Cs_j2M6rpH9oUOcWz8S8wMITN9k/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1zGTQ1vKlmy3_ssYFeEVt6aWXS6T4SFd1/view?usp=sharing"
                     target="_blank"
                   >
                     Resume
