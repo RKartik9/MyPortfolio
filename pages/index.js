@@ -114,7 +114,7 @@ export default function Home() {
                   <a
                     className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
                  px-1 lg:px-4 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem"
-                    href="https://cyeb6azqdh9.typeform.com/to/pXJfDEE5"
+                    href="https://form.typeform.com/to/pXJfDEE5"
                     target="_blank"
                   >
                     Contact Me
