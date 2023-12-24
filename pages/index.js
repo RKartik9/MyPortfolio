@@ -58,6 +58,7 @@ export default function Home() {
     Greet =
       "Warm Evening wishes to you!  I hope you had a successful day of troubleshooting.";
   }
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -147,7 +148,7 @@ export default function Home() {
             <h1 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
               My Socials
             </h1>
-            <div className="p-3 text-6xl flex justify-center gap-16 py-3 text-gray-600  ">
+            <div className="p-3 lg:text-7xl flex justify-center gap-16 py-3 text-gray-600 text-3xl  ">
               <a
                 href="https://www.linkedin.com/in/rohit-kumar-760b0b1b6/"
                 target="_blank"
@@ -349,18 +350,25 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <div className="lg:flex gap-10 justify-center  lg: flex justify-center ">
+            <div className="lg:flex gap-10   lg: flex justify-center ">
               <div>
                 <p className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
                   Mail me at
                 </p>
                 <a
-                  className="block w-44 p-4"
+                  className="block w-44 lg:p-2 "
                   href={`mailto:rohit.kartik9@gmail.com`}
                 >
                   <Image src={mail} />
                 </a>
               </div>
+            </div>
+          </section>
+          <section className=" py-4">
+            <div className="copyright text-center">
+              <p className="lg:text-lg text-sm font-bold dark:text-white">
+                &copy; {currentYear} Rohit Kumar. All rights reserved.
+              </p>
             </div>
           </section>
         </main>
