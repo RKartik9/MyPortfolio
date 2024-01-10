@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+// import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -26,7 +26,7 @@ import adobepremiere from "../public/adobepremiere.png";
 import blender from "../public/blender.png";
 import photoshop from "../public/photoshop.png";
 import { useState } from "react";
-import { BsSun } from "react-icons/bs";
+// import { BsSun } from "react-icons/bs";
 import mail from "../public/gmail.png";
 import xd from "../public/xd.png";
 import java from "../public/java.png";
@@ -36,10 +36,18 @@ import vite from "../public/vite.png";
 import git from "../public/git.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-  const color = {
-    color: "#fff",
+  const [isChecked, setIsChecked] = useState(false);
+
+  // const [darkMode, setDarkMode] = useState(false);
+
+  const handleToggle = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+    document.documentElement.classList.toggle("dark", !darkMode);
   };
+  const [darkMode, setDarkMode] = useState(false);
+  // const color = {
+  //   color: "#fff",
+  // };
   const [nav, setNav] = useState(false);
 
   const showNav = () => {
@@ -58,6 +66,7 @@ export default function Home() {
     Greet =
       "Warm Evening wishes to you!  I hope you had a successful day of troubleshooting.";
   }
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -77,27 +86,31 @@ export default function Home() {
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
           <section className="min-h-screen">
             <nav className="p-3 py-6 mb-11 flex justify-around">
-              <h1 className="text-xl  font-burtons dark:text-white">
+              <h1 className="text-xl lg:text-2xl  font-burtons dark:text-white">
                 Rohit Kumar
               </h1>
               <ul className="flex items-center ">
-                <li
-                  text-xl
-                  className="hover:scale-125 transform transition-transform duration-9000"
-                >
-                  {darkMode ? (
-                    <BsSun
-                      onClick={() => setDarkMode(!darkMode)}
-                      style={color}
-                      className="cursor-pointer text-xl "
-                    />
-                  ) : (
-                    <BsFillMoonStarsFill
-                      onClick={() => setDarkMode(!darkMode)}
-                      className=" cursor-pointer text-2xl"
-                    />
-                  )}
-                </li>
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    className="sr-only peer"
+                    value=""
+                    type="checkbox"
+                    checked={darkMode}
+                    onChange={handleToggle}
+                  />
+                  <div
+                    className={`w-12 h-7 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden
+                    before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️']
+                    before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all
+                    before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400
+                    peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d]
+                    after:rounded-full after:top-[2px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all
+                    after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0
+                    lg:w-20 lg:h-10 lg:before:w-8 lg:before:h-8 lg:after:w-8 lg:after:h-8
+                    sm:w-10 sm:h-5 sm:before:w-3 sm:before:h-3 sm:after:w-3 sm:after:h-3
+                `}
+                  ></div>
+                </label>
 
                 <li>
                   <a
