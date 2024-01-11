@@ -48,6 +48,7 @@ export default function Home() {
   // const color = {
   //   color: "#fff",
   // };
+
   const [nav, setNav] = useState(false);
 
   const showNav = () => {
@@ -85,11 +86,11 @@ export default function Home() {
         </Head>
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
           <section className="min-h-screen">
-            <nav className="p-3 py-6 mb-11 flex justify-around">
-              <h1 className="text-xl lg:text-2xl  font-burtons dark:text-white">
+            <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
+              <h1 className="text-2xl lg:text-3xl font-burtons dark:text-white mb-4 lg:mb-0">
                 Rohit Kumar
               </h1>
-              <ul className="flex items-center ">
+              <ul className="flex items-center space-x-4 lg:space-x-8">
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     className="sr-only peer"
@@ -100,24 +101,21 @@ export default function Home() {
                   />
                   <div
                     className={`w-12 h-7 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden
-                    before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️']
-                    before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all
-                    before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400
-                    peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d]
-                    after:rounded-full after:top-[2px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all
-                    after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0
-                    lg:w-20 lg:h-10 lg:before:w-8 lg:before:h-8 lg:after:w-8 lg:after:h-8
-                    sm:w-10 sm:h-5 sm:before:w-3 sm:before:h-3 sm:after:w-3 sm:after:h-3
-                `}
+            before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️']
+            before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all
+            before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400
+            peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d]
+            after:rounded-full after:top-[2px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all
+            after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0
+            lg:w-20 lg:h-10 lg:before:w-8 lg:before:h-8 lg:after:w-8 lg:after:h-8
+            sm:w-10 sm:h-5 sm:before:w-3 sm:before:h-3 sm:after:w-3 sm:after:h-3
+        `}
                   ></div>
                 </label>
-
                 <li>
                   <a
-                    className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
-                    px-1
-                  lg:px-2 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem "
                     href="https://drive.google.com/file/d/14qGXwt8-sVvOE2CiD3g-7prfiTXQbQH1/view?usp=sharing"
+                    className="lg:w-[120px] font-burtons w-[90px] bg-black h-[50px] mx-2 lg:mx-8 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                     target="_blank"
                   >
                     Resume
@@ -125,9 +123,8 @@ export default function Home() {
                 </li>
                 <li className="text-0.5rem">
                   <a
-                    className=" bg-gradient-to-r from bg-cyan-500 to-teal-500 text-white
-                 px-1 lg:px-4 py-2 rounded-md ml-3 lg:ml-8 text-0.5rem"
                     href="https://form.typeform.com/to/pXJfDEE5"
+                    className="lg:w-[150px] font-burtons w-[100px] bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                     target="_blank"
                   >
                     Contact Me
@@ -135,6 +132,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
+
             {/* <div className="text-center ">
               <h3 className="greet text-xl py-1 text-teal-600 font-medium md:text-2xl dark:text-cyan-400">
                 {Greet}
