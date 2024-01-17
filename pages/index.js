@@ -88,7 +88,7 @@ export default function Home() {
           <section className="min-h-screen">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
               <h1 className="text-2xl lg:text-3xl font-burtons dark:text-white mb-4 lg:mb-0">
-                Rohit Kumar
+                Rohit
               </h1>
               <ul className="flex items-center space-x-4 lg:space-x-8">
                 <label className="relative inline-flex items-center cursor-pointer">
