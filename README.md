@@ -36,12 +36,6 @@ The project serves as a portfolio website to highlight my skills, projects, and 
 
 This will launch the website locally, usually at http://localhost:3000.
 
-## Usage
-
-- Customize the content in the provided files to add your personal information, projects, and skills.
-- Modify the styling or layout files to personalize the look and feel of your portfolio.
-- Update the links in the navigation or footer components to point to your GitHub, LinkedIn, and Behance profiles.
-
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to the project, please follow these steps:
