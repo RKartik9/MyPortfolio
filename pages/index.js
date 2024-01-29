@@ -74,7 +74,7 @@ export default function Home() {
     <>
       <div className={darkMode ? "dark" : ""}>
         <Head>
-          <title>Rohit Kumar</title>
+          <title>Rohit Kartik</title>
           <meta
             name="description"
             content="Portfolio Website made by Rohit Kartik"
