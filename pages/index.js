@@ -91,7 +91,7 @@ export default function Home() {
           <section className="min-h-screen">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
               <h1 className="text-2xl lg:text-3xl font-burtons dark:text-white mb-4 lg:mb-0">
-                Rohit
+                Rohit Kumar
               </h1>
               <ul className="flex items-center space-x-4 lg:space-x-8">
                 <label className="relative inline-flex items-center cursor-pointer">
@@ -166,21 +166,21 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/rohit-kumar-760b0b1b6/"
                 target="_blank"
-                className=" bg-teal-200  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1  "
+                className=" bg-teal-200 dark:bg-cyan-400  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1  "
               >
                 {darkMode ? <FiLinkedin /> : <AiFillLinkedin />}
               </a>
               <a
                 href="https://github.com/RKartik9"
                 target="_blank"
-                className=" bg-teal-200  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1  "
+                className=" bg-teal-200 dark:bg-cyan-400  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1  "
               >
                 {darkMode ? <FiGithub /> : <AiFillGithub />}
               </a>
               <a
                 href="https://www.behance.net/rkartik9"
                 target="_blank"
-                className="bg-teal-200  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1 "
+                className="bg-teal-200 dark:bg-cyan-400  p-5 rounded-lg shadow-md border border-transparent transition-transform duration-500 hover:shadow-inner hover:translate-y-1 hover:border hover:border-gray-200 hover:border-opacity-25 hover:-rotate-x-1 hover:rotate-y-1 "
               >
                 {darkMode ? <SlSocialBehance /> : <AiFillBehanceCircle />}
               </a>
