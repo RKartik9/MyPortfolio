@@ -19,7 +19,7 @@ import node from "../public/node.png";
 import express from "../public/expressJs.png";
 import mongo from "../public/mongo.png";
 import next from "../public/nextjs.png";
-import reac from "../public/react.png";
+import reac from "../public/react1.png";
 import tailwind from "../public/tailwind.png";
 import figma from "../public/figma.png";
 import adobepremiere from "../public/adobepremiere.png";
@@ -34,6 +34,7 @@ import python from "../public/python.png";
 import javascript from "../public/javascript.png";
 import vite from "../public/vite.png";
 import git from "../public/git.png";
+// import express from "../public/express-js.png";
 
 export default function Home() {
   const [isChecked, setIsChecked] = useState(false);
@@ -196,7 +197,7 @@ export default function Home() {
               <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
                 Skills
               </h3>
-              <p className="text-md py-2 leading-10 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
+              <p className="text-md py-2 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
                 I am Rohit Kumar, a driven and talented Computer Science
                 Engineering student, with a passion for technology and design, I
                 have honed my skills in{" "}
@@ -225,16 +226,16 @@ export default function Home() {
                   Web Developer
                 </h3>
                 <p className="py-2 dark:text-white">
-                  Developing fully responsive Website using latest frameworks
-                  like ReactJs, NextJs, ExpressJs
+                  Developing Full Stack Website using latest frameworks like
+                  NextJs, ExpressJs, NodeJs
                 </p>
                 <h4 className="py-4 text-teal-600 dark:text-cyan-400">
                   Some Frameworks are
                 </h4>
                 <div className=" flex justify-center gap-9 ">
-                  <Image src={reac} width={40}></Image>
+                  <Image src={node} width={50}></Image>
+                  <Image src={express} width={50}></Image>
                   <Image src={next} width={50}></Image>
-                  <Image src={tailwind} width={50}></Image>
                 </div>
               </div>
               <div className=" flex-grow text-center shadow-xl p-12 rounded-xl my-10 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
@@ -291,7 +292,7 @@ export default function Home() {
           <section className="p-10">
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
               <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
-                Technologies, I have worked upon
+                Technologies, I have worked upon!
               </h3>
               {/* row-1 */}
               <div className="flex justify-around gap-5 w-auto">
