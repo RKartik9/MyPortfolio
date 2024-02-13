@@ -143,14 +143,14 @@ export default function Home() {
               </h3>
             </div> */}
 
-            <div className="text-center p-7">
+            <div className="text-center p-2">
               <h2 className="text-3xl py-2 text-teal-600 font-medium md:text-6xl dark:text-cyan-400">
                 Developer || Designer
               </h2>
               <h3 className="text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
-                Web Developer Co-lead at Google Developer Student Clubs, NIET
+                Ex-Web Developer Co-lead at Google Developer Student Clubs, NIET
               </h3>
-              <p className="text-md py-6 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
+              <p className="text-md py-3 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
                 As an undergraduate student, I possess an immense enthusiasm for
                 learning and exploring new things. Adaptability is one of my
                 core strengths, and I embrace challenges with great excitement.
@@ -193,11 +193,11 @@ export default function Home() {
 
           {/* Second Section */}
           <section className="px-6">
-            <div className=" text-center p-9">
+            <div className=" text-center p-6">
               <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
                 Skills
               </h3>
-              <p className="text-md py-2 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
+              <p className="text-md py-1 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
                 I am Rohit Kumar, a driven and talented Computer Science
                 Engineering student, with a passion for technology and design, I
                 have honed my skills in{" "}
