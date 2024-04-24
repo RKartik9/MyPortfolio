@@ -270,7 +270,7 @@ export default function Home() {
                   height={100}
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                  Data Structures and Algorithm
+                  Data Structures and Algorithm.
                 </h3>
                 <p className="py-2 dark:text-white">
                   I have a good command in Data Structures and Algorithms,
