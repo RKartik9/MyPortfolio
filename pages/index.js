@@ -87,30 +87,6 @@ export default function Home() {
           />
           <link rel="icon" sizes="180x180" href="/favicon-32x32.png" />
           <link rel="icon" sizes="180x180" href="/favicon-16x16.png" />
-          <style>
-            {`
-              /* For Webkit browsers (Chrome, Safari, and Edge) */
-              ::-webkit-scrollbar {
-                width: 12px;
-              }
-              
-              ::-webkit-scrollbar-track {
-                background: #f1f1f1;
-              }
-              
-              ::-webkit-scrollbar-thumb {
-                background-color: #00bcd4; /* Cyan color */
-                border-radius: 10px;
-                border: 3px solid #f1f1f1;
-              }
-              
-              /* For Firefox */
-              * {
-                scrollbar-width: thin;
-                scrollbar-color: #00bcd4 #f1f1f1;
-              }
-            `}
-          </style>
         </Head>
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
           <section className="min-h-screen">
