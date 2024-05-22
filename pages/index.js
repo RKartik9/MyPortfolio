@@ -87,6 +87,30 @@ export default function Home() {
           />
           <link rel="icon" sizes="180x180" href="/favicon-32x32.png" />
           <link rel="icon" sizes="180x180" href="/favicon-16x16.png" />
+          <style>
+            {`
+              /* For Webkit browsers (Chrome, Safari, and Edge) */
+              ::-webkit-scrollbar {
+                width: 12px;
+              }
+              
+              ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+              }
+              
+              ::-webkit-scrollbar-thumb {
+                background-color: #00bcd4; /* Cyan color */
+                border-radius: 10px;
+                border: 3px solid #f1f1f1;
+              }
+              
+              /* For Firefox */
+              * {
+                scrollbar-width: thin;
+                scrollbar-color: #00bcd4 #f1f1f1;
+              }
+            `}
+          </style>
         </Head>
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
           <section className="min-h-screen">
@@ -118,7 +142,7 @@ export default function Home() {
                 </label>
                 <li>
                   <a
-                    href="https://drive.google.com/file/d/14qGXwt8-sVvOE2CiD3g-7prfiTXQbQH1/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1eY_br6Axfd2xBU_KadzzT7rK-C5RhlLq/view?usp=sharing"
                     className="lg:w-[120px] font-burtons w-[90px] bg-teal-600 dark:bg-cyan-400 h-[50px] mx-2 lg:mx-8 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#3babe3] before:to-[rgb(188,96,228)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                     target="_blank"
                   >
