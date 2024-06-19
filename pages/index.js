@@ -92,7 +92,7 @@ export default function Home() {
           <section className="min-h-screen">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
               <h1 className="text-2xl lg:text-3xl font-burtons dark:text-white mb-4 lg:mb-0">
-                Rohit Kumar
+                Rohit Kartik
               </h1>
               <ul className="flex items-center space-x-4 lg:space-x-8">
                 <label className="relative inline-flex items-center cursor-pointer">
@@ -198,9 +198,9 @@ export default function Home() {
                 Skills
               </h3>
               <p className="text-md py-1 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
-                I am Rohit Kumar, a driven and talented Computer Science
-                Engineering student, with a passion for technology and design, I
-                have honed my skills in{" "}
+                I am Rohit, a driven and talented Computer Science Engineering
+                student, with a passion for technology and design, I have honed
+                my skills in{" "}
                 <span className=" text-teal-600 font-medium dark:text-cyan-400">
                   MERN Stack development
                 </span>{" "}
@@ -381,8 +381,8 @@ export default function Home() {
           </section>
           <section className=" py-4">
             <div className="copyright text-center">
-              <p className="lg:text-lg text-sm font-bold dark:text-white">
-                &copy; {currentYear} Rohit Kumar. All rights reserved.
+              <p className="font-bold text-sm  dark:text-white">
+                &copy; {currentYear} Rohit Kartik. All rights reserved.
               </p>
             </div>
           </section>
