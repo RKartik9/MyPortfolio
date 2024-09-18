@@ -10,7 +10,7 @@ import {
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { SlSocialBehance } from "react-icons/sl";
 import deved from "../public/laptop-front.png";
-import design from "../public/design.png";
+// import design from "../public/design.png";
 import web from "../public/webdev.png";
 import dsa from "../public/DS.png";
 import js from "../public/javascript.png";
