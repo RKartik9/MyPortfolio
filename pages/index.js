@@ -10,7 +10,7 @@ import {
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { SlSocialBehance } from "react-icons/sl";
 import deved from "../public/laptop-front.png";
-// import design from "../public/design.png";
+import design from "../public/design.png";
 import web from "../public/webdev.png";
 import dsa from "../public/DS.png";
 import js from "../public/javascript.png";
@@ -29,7 +29,7 @@ import photoshop from "../public/photoshop.png";
 import { useState } from "react";
 // import { BsSun } from "react-icons/bs";
 import mail from "../public/gmail.png";
-import sign from "../public/sign.png";
+// import sign from "../public/sign.png";
 import xd from "../public/xd.png";
 import java from "../public/java.png";
 import python from "../public/python.png";
