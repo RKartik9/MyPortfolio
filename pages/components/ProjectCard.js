@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./card.module.css";
 
 const ProjectCard = ({ project }) => {
+  if (!project || !project.imageUrl || !project.title || !project.description) {
+    // If any of the project data is missing, return null or show a fallback UI
+    return null;
+  }
+
   return (
     <div className={styles.cards}>
       <img
