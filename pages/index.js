@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import ProjectsSection from "./api/data/projectSection";
 // import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillLinkedin,
@@ -28,12 +29,16 @@ import photoshop from "../public/photoshop.png";
 import { useState } from "react";
 // import { BsSun } from "react-icons/bs";
 import mail from "../public/gmail.png";
+import sign from "../public/sign.png";
 import xd from "../public/xd.png";
 import java from "../public/java.png";
 import python from "../public/python.png";
 import javascript from "../public/javascript.png";
 import vite from "../public/vite.png";
 import git from "../public/git.png";
+import projects from "./api/data/projects";
+import ProjectCard from "./components/ProjectCard";
+
 // import express from "../public/express-js.png";
 
 export default function Home() {
@@ -143,14 +148,14 @@ export default function Home() {
               </h3>
             </div> */}
 
-            <div className="text-center p-2">
-              <h2 className="text-3xl py-2 text-teal-600 font-medium md:text-6xl dark:text-cyan-400">
+            <div className="text-center p-1">
+              <h2 className="text-3xl  py-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400">
                 Developer || Designer
               </h2>
-              <h3 className="text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
+              <h3 className="text-xl py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
                 Ex-Web Developer Co-lead at Google Developer Student Clubs, NIET
               </h3>
-              <p className="text-md py-3 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
+              {/* <p className="text-md py-3 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
                 As an undergraduate student, I possess an immense enthusiasm for
                 learning and exploring new things. Adaptability is one of my
                 core strengths, and I embrace challenges with great excitement.
@@ -158,12 +163,12 @@ export default function Home() {
                 process itself. I am constantly driven to acquire new knowledge
                 and skills, and I derive immense satisfaction from assisting and
                 supporting my peers.
-              </p>
+              </p> */}
             </div>
-            <h1 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
+            {/* <h1 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
               My Socials
-            </h1>
-            <div className="p-3 lg:text-7xl flex justify-center gap-16 py-3 text-gray-600 text-3xl  ">
+            </h1> */}
+            <div className="p-3 lg:text-5xl flex justify-center gap-16 py-3 mb-6 text-gray-600 text-3xl  ">
               <a
                 href="https://www.linkedin.com/in/rohit-kumar-760b0b1b6/"
                 target="_blank"
@@ -186,14 +191,14 @@ export default function Home() {
                 {darkMode ? <SlSocialBehance /> : <AiFillBehanceCircle />}
               </a>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-87 mt-20 md:h-70 md:w-70">
+            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-87 mt-19 md:h-70 md:w-70">
               <Image src={deved} />
             </div>
           </section>
 
           {/* Second Section */}
           <section className="px-6">
-            <div className=" text-center p-6">
+            {/* <div className=" text-center p-6">
               <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
                 Skills
               </h3>
@@ -213,14 +218,14 @@ export default function Home() {
                 </span>{" "}
                 etc.
               </p>
-            </div>
-            <div className="lg:flex gap-10 flex-1 ">
-              <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-10 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
+            </div> */}
+            <div className="lg:flex gap-8 flex-1 ">
+              <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-5 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
                 <Image
                   className="inline-flex"
                   src={web}
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                 />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                   Web Developer
@@ -294,22 +299,21 @@ export default function Home() {
               <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
                 Technologies, I have worked upon!
               </h3>
-              {/* row-1 */}
+
               <div className="flex justify-around gap-5 w-auto">
-                {/* html */}
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={html} width={100} height={100} />
                 </div>
-                {/* css */}
+
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={css} width={80} height={90} />
                 </div>
-                {/* JS */}
+
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={js} width={90} height={90} />
                 </div>
               </div>
-              {/* row-2 */}
+
               <div className="flex justify-around px-1.5 py-10 gap-5">
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={node} width={110} height={90} />
@@ -327,7 +331,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* row-3 */}
               <div className="flex justify-around px-1.5 gap-5 ">
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={reac} width={100} height={90} />
@@ -339,7 +342,7 @@ export default function Home() {
                   <Image src={next} width={110} height={90} />
                 </div>
               </div>
-              {/* 4-th row */}
+
               <div className="flex justify-around px-1.5 py-8 gap-5">
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={adobepremiere} width={100} height={90} />
@@ -364,14 +367,43 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* <section className="p-10"> */}
+          {/* <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
+              <h3 className="text-center text-xl py-7 font-burtons text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
+                Projects
+              </h3>
+            </div> */}
+          <div className="text-center p-1">
+            <h2 className="text-3xl  py-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400">
+              My Projects
+            </h2>
+            <div
+              className="card-container"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                flexWrap: "wrap",
+                justifyContent: "space-between", // Adds spacing between cards
+                gap: "2rem",
+                margin: "1rem 0",
+              }}
+            >
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+          {/* </section> */}
+
           <section>
             <div className="lg:flex gap-10   lg: flex justify-center ">
               <div>
-                <p className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
+                <p className="text-center text-sm py-2 mt-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400 ">
                   Mail me at
                 </p>
                 <a
-                  className="block w-44 lg:p-2 "
+                  className="block w-24 lg:w-36 lg:p-5 "
                   href={`mailto:rohit.kartik9@gmail.com`}
                 >
                   <Image src={mail} />
@@ -383,6 +415,7 @@ export default function Home() {
             <div className="copyright text-center">
               <p className="font-bold text-sm  dark:text-white">
                 &copy; {currentYear} Rohit Kartik. All rights reserved.
+                {/* <Image src={sign} /> */}
               </p>
             </div>
           </section>
