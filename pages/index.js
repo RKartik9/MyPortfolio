@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import ProjectsSection from "./api/data/projectSection";
 // import { BsFillMoonStarsFill } from "react-icons/bs";
+import { IconCloud } from "./components/GlobeIcon";
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -29,7 +30,7 @@ import photoshop from "../public/photoshop.png";
 import { useState } from "react";
 // import { BsSun } from "react-icons/bs";
 import mail from "../public/gmail.png";
-// import sign from "../public/sign.png";
+import sign from "../public/sign.png";
 import xd from "../public/xd.png";
 import java from "../public/java.png";
 import python from "../public/python.png";
@@ -38,13 +39,35 @@ import vite from "../public/vite.png";
 import git from "../public/git.png";
 import projects from "./api/data/projects";
 import ProjectCard from "./components/ProjectCard";
-
 // import express from "../public/express-js.png";
+import { TypingAnimation } from "./components/TypingText";
+// import { ShinyButton } from "./components/ShinyButtons";
+// import { FlickeringGrid } from "./components/FlickeringTest";
 
 export default function Home() {
+  const iconSlugs = [
+    "html5",
+    "css3",
+    "javascript",
+    "node-dot-js",
+    "express",
+    "mongodb",
+    "react",
+    "tailwindcss",
+    "nextjs",
+    "adobephotoshop",
+    "figma",
+    "blender",
+    "vite",
+    "git",
+    "adobexd",
+    "typescript",
+  ];
+
   const [isChecked, setIsChecked] = useState(false);
 
   // const [darkMode, setDarkMode] = useState(false);
+  const [hover, setHover] = useState(false);
 
   const handleToggle = () => {
     setDarkMode((prevDarkMode) => !prevDarkMode);
@@ -94,11 +117,12 @@ export default function Home() {
           <link rel="icon" sizes="180x180" href="/favicon-16x16.png" />
         </Head>
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
-          <section className="min-h-screen">
+          <section className="">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
-              <h1 className="text-2xl lg:text-3xl font-burtons dark:text-white mb-4 lg:mb-0">
-                Rohit Kartik
-              </h1>
+              <TypingAnimation
+                className=" text-lg  text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400"
+                text="Rohit Kartik"
+              />
               <ul className="flex items-center space-x-4 lg:space-x-8">
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
@@ -121,10 +145,34 @@ export default function Home() {
         `}
                   ></div>
                 </label>
+                {/* <a
+                  href="https://drive.google.com/file/d/1eY_br6Axfd2xBU_KadzzT7rK-C5RhlLq/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    className="relative group overflow-hidden text-red-100 font-burtons   px-6 py-3 text-lg rounded-md bg-gray-200 border border-gray-200 
+               shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] transition-all duration-200 ease-in
+               hover:text-white hover:border-teal-600 font-semibold"
+                  >
+                    <span
+                      className="absolute left-1/2 top-full w-[140%] h-[180%] bg-black/5 rounded-full transform -translate-x-1/2 
+                 transition-all duration-500 ease-in-out
+                 group-hover:top-[-35%] group-hover:bg-teal-600 group-hover:scale-x-[0.8] group-hover:scale-y-[1.3]"
+                    />
+                    <span
+                      className="absolute left-1/2 top-full w-[160%] h-[190%] bg-teal-600 rounded-full transform -translate-x-1/2 
+                 transition-all duration-500 ease-in-out delay-100
+                 group-hover:top-[-45%] group-hover:scale-x-[0.8] group-hover:scale-y-[1.3]"
+                    />
+                    <span className="relative z-10">Resume</span>
+                  </button>
+                </a> */}
+
                 <li>
                   <a
                     href="https://drive.google.com/file/d/1eY_br6Axfd2xBU_KadzzT7rK-C5RhlLq/view?usp=sharing"
-                    className="lg:w-[120px] font-burtons w-[90px] bg-teal-600 dark:bg-cyan-400 h-[50px] mx-2 lg:mx-8 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#3babe3] before:to-[rgb(188,96,228)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
+                    className="lg:w-[120px] font-burtons w-[90px] bg-teal-600 dark:bg-cyan-400 h-[50px] mx-2 lg:mx-8 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#3babe3] before:to-[rgb(39,227,241)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                     target="_blank"
                   >
                     Resume
@@ -133,7 +181,7 @@ export default function Home() {
                 <li className="text-0.5rem">
                   <a
                     href="https://form.typeform.com/to/pXJfDEE5"
-                    className="lg:w-[150px] font-burtons w-[100px] bg-teal-600 dark:bg-cyan-400 h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-[#3babe3] before:to-[rgb(188,96,228)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
+                    className="lg:w-[150px] font-burtons w-[100px] bg-teal-600 dark:bg-cyan-400 h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-[#3babe3] before:to-[rgb(39,227,241)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                     target="_blank"
                   >
                     Contact Me
@@ -149,12 +197,14 @@ export default function Home() {
             </div> */}
 
             <div className="text-center p-1">
-              <h2 className="text-3xl  py-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400">
-                Developer || Designer
-              </h2>
+              <h3 className="text-l py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
+                Software Developer Intern at{" "}
+                <span className=" text-orange-600">Orangewood Labs </span>
+              </h3>
               <h3 className="text-xl py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
                 Ex-Web Developer Co-lead at Google Developer Student Clubs, NIET
               </h3>
+
               {/* <p className="text-md py-3 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
                 As an undergraduate student, I possess an immense enthusiasm for
                 learning and exploring new things. Adaptability is one of my
@@ -296,11 +346,15 @@ export default function Home() {
 
           <section className="p-10">
             <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
-              <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 ">
-                Technologies, I have worked upon!
+              <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 font-burtons">
+                Technologies, I have worked upon !
               </h3>
+              <div>
+                {/* <h1>Welcome to My Portfolio</h1> */}
+                <IconCloud iconSlugs={iconSlugs} />
+              </div>
 
-              <div className="flex justify-around gap-5 w-auto">
+              {/* <div className="flex justify-around gap-5 w-auto">
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={html} width={100} height={100} />
                 </div>
@@ -364,7 +418,7 @@ export default function Home() {
                 <div className="hover:scale-110 duration-500 cursor-pointer">
                   <Image src={xd} width={116} height={110} />
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
@@ -374,7 +428,7 @@ export default function Home() {
                 Projects
               </h3>
             </div> */}
-          <div className="text-center p-1">
+          {/* <div className="text-center p-1">
             <h2 className="text-3xl  py-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400">
               My Projects
             </h2>
@@ -393,13 +447,27 @@ export default function Home() {
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>
-          </div>
+          </div> */}
           {/* </section> */}
+
+          {/* Testng here */}
+          {/* <div className="relative w-full h-screen bg-white dark:bg-black">
+            <FlickeringGrid
+              squareSize={4}
+              gridGap={6}
+              flickerChance={0.5}
+              color="rgba(0, 150, 255, 0.5)"
+              maxOpacity={0.5}
+              width={800}
+              height={600}
+              className="absolute top-0 left-0"
+            />
+          </div> */}
 
           <section>
             <div className="lg:flex gap-10   lg: flex justify-center ">
               <div>
-                <p className="text-center text-sm py-2 mt-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400 ">
+                <p className="text-center text-sm py-2 text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400 ">
                   Mail me at
                 </p>
                 <a

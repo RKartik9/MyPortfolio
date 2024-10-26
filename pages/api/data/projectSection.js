@@ -1,7 +1,7 @@
 // src/ProjectsSection.js
 
 import React, { useState } from "react";
-import ProjectCard from "@/pages/components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 // import projects from "./data/projects"; // Your array of project data
 import projects from "./projects";
 

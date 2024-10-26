@@ -16,7 +16,7 @@
   width: 100%;
   max-width: 280px;
   height: auto;
-  border: 3px solid rgb(1, 166, 248);
+  border: 2px solid rgb(58, 127, 161);
   transition: transform 0.2s;
   margin: 0 auto;
 }
