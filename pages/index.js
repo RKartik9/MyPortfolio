@@ -30,7 +30,7 @@ import photoshop from "../public/photoshop.png";
 import { useState } from "react";
 // import { BsSun } from "react-icons/bs";
 import mail from "../public/gmail.png";
-import sign from "../public/sign.png";
+// import sign from "../public/sign.png";
 import xd from "../public/xd.png";
 import java from "../public/java.png";
 import python from "../public/python.png";
