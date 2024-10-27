@@ -94,7 +94,7 @@ export default function Home() {
           <title>Rohit Kartik</title>
           <meta
             name="description"
-            content="Portfolio Website made by Rohit Kartik"
+            content="Rohit Kartik -  Portfolio Website"
           />
           <link
             rel="apple-touch-icon"
