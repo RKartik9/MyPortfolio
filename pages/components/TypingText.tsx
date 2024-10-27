@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-// Simple utility function to concatenate class names
 function cn(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -13,11 +12,7 @@ interface TypingAnimationProps {
   className?: string;
 }
 
-export function TypingAnimation({
-  text,
-  duration = 150,
-  className,
-}: TypingAnimationProps) {
+function TypingText({ text, duration = 150, className }: TypingAnimationProps) {
   const [displayedText, setDisplayedText] = useState<string>("");
   const [i, setI] = useState<number>(0);
 
@@ -47,3 +42,5 @@ export function TypingAnimation({
     </h1>
   );
 }
+
+export default TypingText;

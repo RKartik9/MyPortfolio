@@ -1,46 +1,34 @@
 import Head from "next/head";
 import Image from "next/image";
-import ProjectsSection from "./api/data/projectSection";
 // import { BsFillMoonStarsFill } from "react-icons/bs";
-import { IconCloud } from "./components/GlobeIcon";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillBehanceCircle,
-} from "react-icons/ai";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
-import { SlSocialBehance } from "react-icons/sl";
-import deved from "../public/laptop-front.png";
-import design from "../public/design.png";
-import web from "../public/webdev.png";
-import dsa from "../public/DS.png";
-import js from "../public/javascript.png";
-import html from "../public/html.png";
-import css from "../public/css.png";
-import node from "../public/node.png";
-import express from "../public/expressJs.png";
-import mongo from "../public/mongo.png";
-import next from "../public/nextjs.png";
-import reac from "../public/react1.png";
-import tailwind from "../public/tailwind.png";
-import figma from "../public/figma.png";
-import adobepremiere from "../public/adobepremiere.png";
-import blender from "../public/blender.png";
-import photoshop from "../public/photoshop.png";
 import { useState } from "react";
+import {
+  AiFillBehanceCircle,
+  AiFillGithub,
+  AiFillLinkedin,
+} from "react-icons/ai";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { SlSocialBehance } from "react-icons/sl";
+import design from "../public/design.png";
+import dsa from "../public/DS.png";
+import express from "../public/expressJs.png";
+import figma from "../public/figma.png";
+import deved from "../public/laptop-front.png";
+import next from "../public/nextjs.png";
+import node from "../public/node.png";
+import photoshop from "../public/photoshop.png";
+import web from "../public/webdev.png";
+import GlobeIcon from "./components/GlobeIcon";
 // import { BsSun } from "react-icons/bs";
 import mail from "../public/gmail.png";
 // import sign from "../public/sign.png";
-import xd from "../public/xd.png";
 import java from "../public/java.png";
-import python from "../public/python.png";
 import javascript from "../public/javascript.png";
-import vite from "../public/vite.png";
-import git from "../public/git.png";
-import projects from "./api/data/projects";
-import ProjectCard from "./components/ProjectCard";
+import python from "../public/python.png";
+import xd from "../public/xd.png";
 // import express from "../public/express-js.png";
-import { TypingAnimation } from "./components/TypingText";
+import TypingAnimation from "./components/TypingText";
+import TypingText from "./components/TypingText";
 // import { ShinyButton } from "./components/ShinyButtons";
 // import { FlickeringGrid } from "./components/FlickeringTest";
 
@@ -119,7 +107,7 @@ export default function Home() {
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
           <section className="">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
-              <TypingAnimation
+              <TypingText
                 className=" text-lg  text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400"
                 text="Rohit Kartik"
               />
@@ -351,7 +339,7 @@ export default function Home() {
               </h3>
               <div>
                 {/* <h1>Welcome to My Portfolio</h1> */}
-                <IconCloud iconSlugs={iconSlugs} />
+                <GlobeIcon iconSlugs={iconSlugs} />
               </div>
 
               {/* <div className="flex justify-around gap-5 w-auto">
