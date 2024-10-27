@@ -9,6 +9,7 @@ import {
   renderSimpleIcon,
   SimpleIcon,
 } from "react-icon-cloud";
+import React from "react";
 
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
@@ -71,18 +72,14 @@ function GlobeIcon({ iconSlugs }: DynamicCloudProps) {
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
-    if (!data) return null;
+    if (!data) return [];
 
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || "light")
     );
   }, [data, theme]);
 
-  return (
-    <Cloud {...cloudProps}>
-      <>{renderedIcons}</>
-    </Cloud>
-  );
+  return <Cloud {...cloudProps}>{renderedIcons}</Cloud>;
 }
 
 export default GlobeIcon;

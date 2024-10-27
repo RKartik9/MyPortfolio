@@ -27,7 +27,7 @@ import javascript from "../public/javascript.png";
 import python from "../public/python.png";
 import xd from "../public/xd.png";
 // import express from "../public/express-js.png";
-import TypingAnimation from "./components/TypingText";
+// import TypingAnimation from "./components/TypingText";
 import TypingText from "./components/TypingText";
 // import { ShinyButton } from "./components/ShinyButtons";
 // import { FlickeringGrid } from "./components/FlickeringTest";
