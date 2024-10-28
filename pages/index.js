@@ -108,7 +108,7 @@ export default function Home() {
           <section className="">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
               <TypingText
-                className=" text-lg  text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400"
+                className=" text-3xl  text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400"
                 text="Rohit Kartik"
               />
               <ul className="flex items-center space-x-4 lg:space-x-8">
@@ -185,13 +185,13 @@ export default function Home() {
             </div> */}
 
             <div className="text-center p-1">
-              <h3 className="text-l py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
+              <h3 className="text-xl py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
                 Software Developer Intern at{" "}
                 <span className=" text-orange-600">Orangewood Labs </span>
               </h3>
-              <h3 className="text-xl py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
+              {/* <h3 className="text-sm py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
                 Ex-Web Developer Co-lead at Google Developer Student Clubs, NIET
-              </h3>
+              </h3> */}
 
               {/* <p className="text-md py-3 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
                 As an undergraduate student, I possess an immense enthusiasm for
