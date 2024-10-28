@@ -106,7 +106,7 @@ export default function Home() {
         </Head>
         <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
           <section className="">
-            <nav className=" py-4 lg:mb-9 flex flex-col lg:flex-row justify-between items-center lg:items-start">
+            <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
               <TypingText
                 className=" text-3xl  text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400"
                 text="Rohit Kartik"
@@ -121,16 +121,16 @@ export default function Home() {
                     onChange={handleToggle}
                   />
                   <div
-                    className={`w-10 h-5 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden
-        before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️']
-        before:absolute before:h-4 before:w-4 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all
-        before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400
-        peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d]
-        after:rounded-full after:top-[2px] after:right-1 after:translate-y-full after:w-4 after:h-4 after:opacity-0 after:transition-all
-        after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0
-        lg:w-16 lg:h-8 lg:before:w-6 lg:before:h-6 lg:after:w-6 lg:after:h-6
-        sm:w-8 sm:h-4 sm:before:w-3 sm:before:h-3 sm:after:w-3 sm:after:h-3
-    `}
+                    className={`w-12 h-7 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden
+            before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️']
+            before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all
+            before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400
+            peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d]
+            after:rounded-full after:top-[2px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all
+            after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0
+            lg:w-20 lg:h-10 lg:before:w-8 lg:before:h-8 lg:after:w-8 lg:after:h-8
+            sm:w-10 sm:h-5 sm:before:w-3 sm:before:h-3 sm:after:w-3 sm:after:h-3
+        `}
                   ></div>
                 </label>
                 {/* <a
@@ -185,19 +185,11 @@ export default function Home() {
             </div> */}
 
             <div className="text-center p-1">
-<<<<<<< HEAD
               <h3 className="text-xl py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
                 Software Developer Intern at{" "}
                 <span className=" text-orange-600">Orangewood Labs </span>
               </h3>
               {/* <h3 className="text-sm py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
-=======
-              <h3 className="text-2xl  text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
-                Software Developer Intern at{" "}
-                <span className=" text-orange-600">Orangewood Labs </span>
-              </h3>
-              {/* <h3 className="text-xl py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
->>>>>>> a86662e547a47fd3e9557c39b462f9783b2f7b6e
                 Ex-Web Developer Co-lead at Google Developer Student Clubs, NIET
               </h3> */}
 
