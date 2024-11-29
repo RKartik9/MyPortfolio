@@ -29,6 +29,8 @@ import xd from "../public/xd.png";
 // import express from "../public/express-js.png";
 // import TypingAnimation from "./components/TypingText";
 import TypingText from "./components/TypingText";
+import { motion } from "framer-motion";
+
 // import { ShinyButton } from "./components/ShinyButtons";
 // import { FlickeringGrid } from "./components/FlickeringTest";
 
@@ -111,7 +113,7 @@ export default function Home() {
                 className=" text-3xl  text-teal-600 font-burtons font-medium md:text-3xl dark:text-cyan-400"
                 text="Rohit Kartik"
               />
-              <ul className="flex items-center space-x-4 lg:space-x-8">
+              <ul className="flex items-center space-x-4 lg:space-x-2">
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     className="sr-only peer"
@@ -235,28 +237,30 @@ export default function Home() {
           </section>
 
           {/* Second Section */}
-          <section className="px-6">
-            {/* <div className=" text-center p-6">
-              <h3 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
-                Skills
-              </h3>
+          <section className="p-7 ">
+            <div className=" text-center p-6 font-burtons">
               <p className="text-md py-1 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
-                I am Rohit, a driven and talented Computer Science Engineering
-                student, with a passion for technology and design, I have honed
-                my skills in{" "}
+                I’m Rohit, a passionate and ambitious Computer Science
+                Engineering student with a keen interest in technology and
+                design. I specialize in{" "}
                 <span className=" text-teal-600 font-medium dark:text-cyan-400">
                   MERN Stack development
                 </span>{" "}
-                and Data Structures and algorithm. I strive to make a difference
-                in the tech industry with my innovative ideas and
-                problem-solving skills. I also love Ui designing and Video
-                Editing. I am very much capable of working in tools like{" "}
+                driven by a commitment to bring innovative ideas and practical
+                solutions to the tech industry. With a strong foundation in UI
+                design and video editing, I excel in tools such as{" "}
                 <span className=" text-teal-600 font-medium dark:text-cyan-400">
-                  Figma, Adobe Photoshop, Adobe Premiere Pro
-                </span>{" "}
-                etc.
+                  Figma, Adobe Photoshop, Adobe Premiere Pro{" "}
+                </span>
+                My goal is to make a meaningful impact through creativity,
+                technical expertise, and problem-solving skills. etc.
               </p>
-            </div> */}
+            </div>
+            <div>
+              <h3 className="text-center font-burtons text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
+                Skills
+              </h3>
+            </div>
             <div className="lg:flex gap-8 flex-1 ">
               <div className="flex-grow text-center shadow-xl p-10 rounded-xl my-5 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
                 <Image
@@ -333,7 +337,16 @@ export default function Home() {
           {/* Third Section */}
 
           <section className="p-10">
-            <div className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  ">
+            <motion.div
+              initial={{ opacity: 0, y: 100, scale: 0.9 }} // More dramatic start: further down and slightly smaller
+              whileInView={{ opacity: 1, y: 0, scale: 1 }} // Fade in, move up, and scale to normal size
+              transition={{
+                duration: 1.5, // Longer duration for a smoother effect
+                ease: [0.2, 0.8, 0.2, 1], // Custom cubic-bezier easing for a bouncy feel
+              }}
+              viewport={{ once: true, margin: "-80px" }} // Trigger animation slightly before element is fully in view
+              className=" text-center shadow-lg p-10 rounded-xl my-10 xs:w-20 dark:shadow-slate-400  "
+            >
               <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 font-burtons">
                 Technologies, I have worked upon !
               </h3>
@@ -407,7 +420,7 @@ export default function Home() {
                   <Image src={xd} width={116} height={110} />
                 </div>
               </div> */}
-            </div>
+            </motion.div>
           </section>
 
           {/* <section className="p-10"> */}
