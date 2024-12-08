@@ -238,7 +238,7 @@ export default function Home() {
 
           {/* Second Section */}
           <section className="p-7 ">
-            <div className=" text-center p-6 font-burtons">
+            {/* <div className=" text-center p-6 ">
               <p className="text-md py-1 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
                 I’m Rohit, a passionate and ambitious Computer Science
                 Engineering student with a keen interest in technology and
@@ -255,7 +255,7 @@ export default function Home() {
                 My goal is to make a meaningful impact through creativity,
                 technical expertise, and problem-solving skills. etc.
               </p>
-            </div>
+            </div> */}
             <div>
               <h3 className="text-center font-burtons text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
                 Skills
