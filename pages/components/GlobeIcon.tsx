@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import {
@@ -37,16 +36,12 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 };
 
-export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
-  const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
-  const minContrastRatio = theme === "dark" ? 2 : 1.2;
-
+export const renderCustomIcon = (icon: SimpleIcon) => {
   return renderSimpleIcon({
     icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
+    bgHex: "#000000",
+    fallbackHex: "#0D9488",
+    minContrastRatio: 1.2,
     size: 42,
     aProps: {
       href: undefined,
@@ -75,9 +70,9 @@ function GlobeIcon({ iconSlugs }: DynamicCloudProps) {
     if (!data) return [];
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light")
+      renderCustomIcon(icon)
     );
-  }, [data, theme]);
+  }, [data]);
 
   return <Cloud {...cloudProps}>{renderedIcons}</Cloud>;
 }
