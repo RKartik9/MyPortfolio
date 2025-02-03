@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-// import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import {
   AiFillBehanceCircle,
@@ -11,28 +10,28 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { SlSocialBehance } from "react-icons/sl";
 import design from "../public/design.png";
 import dsa from "../public/DS.png";
-import express from "../public/expressJs.png";
-import figma from "../public/figma.png";
+
 import deved from "../public/laptop-front.png";
-import next from "../public/nextjs.png";
-import node from "../public/node.png";
-import photoshop from "../public/photoshop.png";
+
 import web from "../public/webdev.png";
 import GlobeIcon from "./components/GlobeIcon";
-// import { BsSun } from "react-icons/bs";
+
 import mail from "../public/gmail.png";
-// import sign from "../public/sign.png";
-import java from "../public/java.png";
-import javascript from "../public/javascript.png";
-import python from "../public/python.png";
-import xd from "../public/xd.png";
-// import express from "../public/express-js.png";
-// import TypingAnimation from "./components/TypingText";
+
 import TypingText from "./components/TypingText";
 import { motion } from "framer-motion";
+import {
+  SiFigma,
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiJavascript,
+  SiPython,
+} from "react-icons/si";
+import { SiNodedotjs, SiExpress, SiNextdotjs } from "react-icons/si";
 
-// import { ShinyButton } from "./components/ShinyButtons";
-// import { FlickeringGrid } from "./components/FlickeringTest";
+import { FaJava } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { AiOutlinePython } from "react-icons/ai";
 
 export default function Home() {
   const iconSlugs = [
@@ -52,21 +51,18 @@ export default function Home() {
     "git",
     "adobexd",
     "typescript",
+    "linux",
+    "python",
+    "java",
   ];
 
   const [isChecked, setIsChecked] = useState(false);
-
-  // const [darkMode, setDarkMode] = useState(false);
-  const [hover, setHover] = useState(false);
 
   const handleToggle = () => {
     setDarkMode((prevDarkMode) => !prevDarkMode);
     document.documentElement.classList.toggle("dark", !darkMode);
   };
   const [darkMode, setDarkMode] = useState(false);
-  // const color = {
-  //   color: "#fff",
-  // };
 
   const [nav, setNav] = useState(false);
 
@@ -135,33 +131,10 @@ export default function Home() {
         `}
                   ></div>
                 </label>
-                {/* <a
-                  href="https://drive.google.com/file/d/1eY_br6Axfd2xBU_KadzzT7rK-C5RhlLq/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button
-                    className="relative group overflow-hidden text-red-100 font-burtons   px-6 py-3 text-lg rounded-md bg-gray-200 border border-gray-200 
-               shadow-[6px_6px_12px_#c5c5c5,-6px_-6px_12px_#ffffff] transition-all duration-200 ease-in
-               hover:text-white hover:border-teal-600 font-semibold"
-                  >
-                    <span
-                      className="absolute left-1/2 top-full w-[140%] h-[180%] bg-black/5 rounded-full transform -translate-x-1/2 
-                 transition-all duration-500 ease-in-out
-                 group-hover:top-[-35%] group-hover:bg-teal-600 group-hover:scale-x-[0.8] group-hover:scale-y-[1.3]"
-                    />
-                    <span
-                      className="absolute left-1/2 top-full w-[160%] h-[190%] bg-teal-600 rounded-full transform -translate-x-1/2 
-                 transition-all duration-500 ease-in-out delay-100
-                 group-hover:top-[-45%] group-hover:scale-x-[0.8] group-hover:scale-y-[1.3]"
-                    />
-                    <span className="relative z-10">Resume</span>
-                  </button>
-                </a> */}
 
                 <li>
                   <a
-                    href="https://drive.google.com/file/d/1eY_br6Axfd2xBU_KadzzT7rK-C5RhlLq/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1BvQbuwIjRrXLkSVhBiYUEFXVVrP4a4Gl/view?usp=drive_link"
                     className="lg:w-[120px] font-burtons w-[90px] bg-teal-600 dark:bg-cyan-400 h-[50px] mx-2 lg:mx-8 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#3babe3] before:to-[rgb(39,227,241)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
                     target="_blank"
                   >
@@ -191,23 +164,8 @@ export default function Home() {
                 Software Developer Intern at{" "}
                 <span className=" text-orange-600">Orangewood Labs </span>
               </h3>
-              {/* <h3 className="text-sm py-2 text-teal-600 font-burtons font-medium md:text-2xl dark:text-cyan-400">
-                Ex-Web Developer Co-lead at Google Developer Student Clubs, NIET
-              </h3> */}
-
-              {/* <p className="text-md py-3 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-                As an undergraduate student, I possess an immense enthusiasm for
-                learning and exploring new things. Adaptability is one of my
-                core strengths, and I embrace challenges with great excitement.
-                While I value the end results, my primary focus lies in the
-                process itself. I am constantly driven to acquire new knowledge
-                and skills, and I derive immense satisfaction from assisting and
-                supporting my peers.
-              </p> */}
             </div>
-            {/* <h1 className="text-center text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
-              My Socials
-            </h1> */}
+
             <div className="p-3 lg:text-5xl flex justify-center gap-16 py-3 mb-6 text-gray-600 text-3xl  ">
               <a
                 href="https://www.linkedin.com/in/rohit-kumar-760b0b1b6/"
@@ -238,24 +196,6 @@ export default function Home() {
 
           {/* Second Section */}
           <section className="p-7 ">
-            {/* <div className=" text-center p-6 ">
-              <p className="text-md py-1 leading-6 text-gray-800 dark:text-white md:text-xl max-w-3xl mx-auto">
-                I’m Rohit, a passionate and ambitious Computer Science
-                Engineering student with a keen interest in technology and
-                design. I specialize in{" "}
-                <span className=" text-teal-600 font-medium dark:text-cyan-400">
-                  MERN Stack development
-                </span>{" "}
-                driven by a commitment to bring innovative ideas and practical
-                solutions to the tech industry. With a strong foundation in UI
-                design and video editing, I excel in tools such as{" "}
-                <span className=" text-teal-600 font-medium dark:text-cyan-400">
-                  Figma, Adobe Photoshop, Adobe Premiere Pro{" "}
-                </span>
-                My goal is to make a meaningful impact through creativity,
-                technical expertise, and problem-solving skills. etc.
-              </p>
-            </div> */}
             <div>
               <h3 className="text-center font-burtons text-xl py-2 text-teal-600 font-medium md:text-3xl dark:text-cyan-400">
                 Skills
@@ -279,10 +219,19 @@ export default function Home() {
                 <h4 className="py-4 text-teal-600 dark:text-cyan-400">
                   Some Frameworks are
                 </h4>
-                <div className=" flex justify-center gap-9 ">
-                  <Image src={node} width={50}></Image>
-                  <Image src={express} width={50}></Image>
-                  <Image src={next} width={50}></Image>
+                <div className="flex justify-center gap-9 py-2">
+                  <SiNodedotjs
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <SiExpress
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <SiNextdotjs
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
               </div>
               <div className=" flex-grow text-center shadow-xl p-12 rounded-xl my-10 dark:shadow-slate-600 hover:scale-110 duration-500 hover:shadow-2xl cursor-pointer">
@@ -302,10 +251,19 @@ export default function Home() {
                 <h4 className="py-4 text-teal-600 dark:text-cyan-400">
                   Design tools I use
                 </h4>
-                <div className=" flex justify-center gap-7 py-2">
-                  <Image src={figma} width={40}></Image>
-                  <Image src={photoshop} width={50}></Image>
-                  <Image src={xd} width={60}></Image>
+                <div className="flex justify-center gap-7 py-2">
+                  <SiFigma
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <SiAdobephotoshop
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <SiAdobexd
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
               </div>
 
@@ -326,11 +284,34 @@ export default function Home() {
                 <h4 className="py-4 text-teal-600 dark:text-cyan-400 ">
                   Languages I know
                 </h4>
-                <div className=" flex justify-center gap-9 py-5">
-                  <Image src={java} width={40}></Image>
-                  <Image src={javascript} width={50}></Image>
-                  <Image src={python} width={50}></Image>
+                <div className="flex justify-center gap-9 py-5">
+                  <FaJava
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <SiJavascript
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <SiPython
+                    size={40}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
+                {/* <div className="flex justify-center gap-9 py-5">
+                  <FaJava
+                    size={50}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <TbBrandJavascript
+                    size={50}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                  <AiOutlinePython
+                    size={50}
+                    className="text-teal-600 dark:text-cyan-400 hover:scale-110 transition-transform duration-300"
+                  />
+                </div> */}
               </div>
             </div>
           </section>
@@ -350,8 +331,10 @@ export default function Home() {
               <h3 className="text-center text-xl py-7 text-teal-600 font-medium md:text-3xl dark:text-cyan-400 font-burtons">
                 Technologies, I have worked upon !
               </h3>
-              <div>
-                {/* <h1>Welcome to My Portfolio</h1> */}
+
+              <div className="flex justify-center items-center h-[600px] w-full">
+                {/* <IconCloud images={techIcons} />
+                 */}
                 <GlobeIcon iconSlugs={iconSlugs} />
               </div>
 
