@@ -17,6 +17,7 @@ import web from "../public/webdev.png";
 import GlobeIcon from "./components/GlobeIcon";
 
 import mail from "../public/gmail.png";
+import Modal from "./components/Modal";
 
 import TypingText from "./components/TypingText";
 import { motion } from "framer-motion";
@@ -32,6 +33,7 @@ import { SiNodedotjs, SiExpress, SiNextdotjs } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { AiOutlinePython } from "react-icons/ai";
+import ContactForm from "./components/Forms";
 
 export default function Home() {
   const iconSlugs = [
@@ -55,6 +57,11 @@ export default function Home() {
     "python",
     "java",
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -142,14 +149,16 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="text-0.5rem">
-                  <a
-                    href="https://form.typeform.com/to/pXJfDEE5"
+                  <div
                     className="lg:w-[150px] font-burtons w-[100px] bg-teal-600 dark:bg-cyan-400 h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-[#3babe3] before:to-[rgb(39,227,241)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
-                    target="_blank"
+                    onClick={openModal}
                   >
                     Contact Me
-                  </a>
+                  </div>
                 </li>
+                <Modal isOpen={isModalOpen} onClose={closeModal}>
+                  <ContactForm />
+                </Modal>
               </ul>
             </nav>
 
