@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   AiFillBehanceCircle,
   AiFillGithub,
@@ -92,6 +92,71 @@ export default function Home() {
 
   const currentYear = new Date().getFullYear();
 
+  useEffect(() => {
+    const showEasterEgg = () => {
+      console.log(
+        `%c
+      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣤⣤⣤⣤⣤⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠾⠛⢉⣩⣭⣭⣭⣭⣭⣭⣍⣉⠛⠻⢿⣦⣀⠀⠀⠀
+      ⠀⠀⠀⠀⠀⠀⢀⣴⠋⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⡙⢿⣦⠀⠀
+      ⠀⠀⠀⠀⠀⣰⡟⢁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠙⣧⡀
+      ⠀⠀⠀⠀⣼⠏⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡘⣷
+      ⠀⠀⢀⣾⠏⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢹
+      ⠀⢀⣾⠏⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡎
+      ⢀⡾⠁⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+      ⣾⠃⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁
+      ⡟⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀
+      ⡇⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠁⠀⠀⠀
+      ⡇⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠀⠀⠀⠀⠀⠀
+      ⠃⠀⠀⠀⠀⠙⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      `,
+        "color: cyan;"
+      );
+
+      console.log(
+        "%cWait... You found the secret developer console! 🕵️‍♂️",
+        "color: #00ff00; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"
+      );
+
+      console.log(
+        "%c🎮 BONUS LEVEL UNLOCKED! 🎮",
+        "color: #ff0; font-size: 24px; font-weight: bold; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); padding: 10px; border-radius: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"
+      );
+
+      setTimeout(() => {
+        console.log(
+          "%c👋 Hi there, fellow developer! While you're here, why not try:\n\n" +
+            "🔍 Exploring my code\n" +
+            "🌟 Star my GitHub repo\n" +
+            "🤝 Connect on LinkedIn\n" +
+            "📧 Send me a message\n\n" +
+            "🎯 Remember: The best code is the one that works in production!",
+          "color: #64ffda; font-size: 14px; line-height: 1.5;"
+        );
+      }, 1000);
+
+      setTimeout(() => {
+        console.log(
+          '%c💡 Pro Tip: Try typing "window.secretMessage()" in the console!',
+          "color: #ff9; font-style: italic; font-size: 13px;"
+        );
+      }, 2000);
+    };
+
+    // Add secret message function to window object
+    window.secretMessage = () => {
+      console.log(
+        "%c🎉 Congratulations! You've discovered the ultra-secret message!\n\n" +
+          "🚀 Remember: Every great developer started somewhere.\n" +
+          "💻 Keep coding, keep learning, keep growing!\n\n" +
+          "- Rohit",
+        "color: #ff79c6; font-size: 16px; font-weight: bold;"
+      );
+    };
+
+    showEasterEgg();
+  }, []);
   return (
     <>
       <div className={darkMode ? "dark" : ""}>
@@ -109,7 +174,7 @@ export default function Home() {
           <link rel="icon" sizes="180x180" href="/favicon-32x32.png" />
           <link rel="icon" sizes="180x180" href="/favicon-16x16.png" />
         </Head>
-        <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900 selection:bg-pink-400 ">
+        <main className=" bg-white text-slate-950  md:px-20 lg:px-20 dark:bg-gray-900  ">
           <section className="">
             <nav className="p-3 py-6 mb-11 flex flex-col lg:flex-row justify-between items-center lg:items-start">
               <TypingText
